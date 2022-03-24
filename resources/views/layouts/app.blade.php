@@ -120,27 +120,26 @@
                         </div>  
                     @endif
                 @else
-                    <div class="Register" >
+                    <!-- <div class="Register" >
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" >
                             @csrf
                             <input type = submit class="btn logout" value="Logout">
                         </form>
-                    </div>
-                    <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    </div> -->
+                    <li class="nav-item dropdown logout-drop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                             {{ Auth::user()->name }}
                         </a>
-
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
 
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
                         </div>
                     </li>
                 @endguest
@@ -274,6 +273,7 @@
                 $(".dropdown").css("display", "none");
                 $(".white-img").css("display", "block");
                 $(".special-img").css("display", "none")
+                $(".logout-drop").css("display", "block")
             }
         }
         function sideNav(){

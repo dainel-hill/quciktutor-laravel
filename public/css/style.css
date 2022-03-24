@@ -620,7 +620,7 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-.login-area , .register-area ,.resetpass-area{
+.login-area , .register-area ,.resetpass-area , .verify{
     background-color: #15151d;
     padding-top: 190px; 
     padding-bottom: 50px;
@@ -647,4 +647,12 @@
 .register-area .card-body form .mb-3{
     padding-bottom: 10px;
 
+}
+.logout-drop{
+    display: block !important;
+    right: 150px !important;
+    top: 35px !important;
+}
+.logout-drop .dropdown-menu a{
+    color:#64647e !important;
 }
