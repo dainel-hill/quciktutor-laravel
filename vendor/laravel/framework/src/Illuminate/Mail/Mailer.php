@@ -249,6 +249,7 @@ class Mailer implements MailerContract, MailQueueContract
      */
     public function send($view, array $data = [], $callback = null)
     {
+        
         if ($view instanceof MailableContract) {
             return $this->sendMailable($view);
         }
@@ -259,7 +260,6 @@ class Mailer implements MailerContract, MailQueueContract
         [$view, $plain, $raw] = $this->parseView($view);
 
         $data['message'] = $message = $this->createMessage();
-
         // Once we have retrieved the view content for the e-mail we will set the body
         // of this message using the HTML type, which will provide a simple wrapper
         // to creating view based emails that are able to receive arrays of data.
@@ -268,6 +268,7 @@ class Mailer implements MailerContract, MailQueueContract
         }
 
         $this->addContent($message, $view, $plain, $raw, $data);
+        
 
         // If a global "to" address has been set, we will set that address on the mail
         // message. This is primarily useful during local development in which each
@@ -286,7 +287,6 @@ class Mailer implements MailerContract, MailQueueContract
 
             if ($symfonySentMessage) {
                 $sentMessage = new SentMessage($symfonySentMessage);
-
                 $this->dispatchSentEvent($sentMessage, $data);
 
                 return $sentMessage;

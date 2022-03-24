@@ -63,6 +63,22 @@
                         </a>
                     </div>
                 </div>
+                @guest
+                    @if (Route::has('login'))
+                        <div class="login">
+                            <a class="btn" href="{{ route('login') }}">Login</a>
+                        </div>
+                    @endif
+                    @if (Route::has('register'))
+                        <div class="Register" >
+                            <a class="btn" href="{{ route('register') }}">Register</a>
+                        </div>  
+                    @endif
+                @else
+                    <div class="Register" >
+                        <a class="btn" href="{{ route('register') }}">Logout</a>
+                    </div> 
+                @endguest
                 <button class="navbar-toggler" onclick="sideNav()" type="button" >
                     <img class="brrger" src="assets/icons/burger@1x.svg">
                     <img class="cross" src="assets/icons/cross@1x.svg">
@@ -741,6 +757,9 @@
     <script>
         var dt = new Date();
         $(".currently-year").html(dt.getFullYear());
+        var sideheight = window.innerHeight - 100;
+        console.log(sideheight);
+         $(".sidepanel").css("height", sideheight);
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
