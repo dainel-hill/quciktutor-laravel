@@ -15,6 +15,7 @@ trait RoutesNotifications
      */
     public function notify($instance)
     {
+        
         app(Dispatcher::class)->send($this, $instance);
     }
 

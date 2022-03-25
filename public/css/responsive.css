@@ -1,4 +1,10 @@
-@media (min-width: 1500px) and (max-width: 1700px){
+@media (min-width: 1700px) and (max-width: 2000px){
+    .container {
+    max-width: 1740px !important;
+}
+}
+
+@media (min-width: 1500px) and (max-width: 1699px){
 .container {
     max-width: 1340px !important;
 }
@@ -177,7 +183,15 @@
     .sidepanel{
         width: -webkit-fill-available !important;
     }
-    
+    .login{
+        right: 200px!important;
+    }
+    .Register{
+        right: 80px !important;
+    }
+    .logout-drop{
+        right: 80px !important;
+    }
 }
 @media only screen and (max-width: 405px){
     .single-introduce{
