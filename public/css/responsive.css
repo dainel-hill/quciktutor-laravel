@@ -186,19 +186,12 @@
     .login{
         right: 200px!important;
     }
-<<<<<<< HEAD
     .Register{
         right: 80px !important;
     }
     .logout-drop{
         right: 80px !important;
     }
-=======
-    .logout-drop{
-        right: 80px !important;
-    }
-    
->>>>>>> f3b566d5a17d4207eb935f9d64edb27a7aae0c09
 }
 @media only screen and (max-width: 405px){
     .single-introduce{

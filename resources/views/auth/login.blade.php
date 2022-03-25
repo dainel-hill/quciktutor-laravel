@@ -25,11 +25,7 @@
                                 </div>
                             </div>
 
-<<<<<<< HEAD
                             <div class="row mb-3 password">
-=======
-                            <div class="row mb-3">
->>>>>>> f3b566d5a17d4207eb935f9d64edb27a7aae0c09
                                 <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
 
                                 <div class="col-md-6">
@@ -43,11 +39,7 @@
                                 </div>
                             </div>
 
-<<<<<<< HEAD
                             <div class="row mb-3 remember">
-=======
-                            <div class="row mb-3">
->>>>>>> f3b566d5a17d4207eb935f9d64edb27a7aae0c09
                                 <div class="col-md-6 offset-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -59,15 +51,9 @@
                                 </div>
                             </div>
 
-<<<<<<< HEAD
                             <div class="row mb-0 forgot">
                                 <div class="col-md-8 offset-md-4">
                                     <button type="submit" class="btn btn-primary btn-login">
-=======
-                            <div class="row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
->>>>>>> f3b566d5a17d4207eb935f9d64edb27a7aae0c09
                                         {{ __('Login') }}
                                     </button>
 
@@ -78,16 +64,13 @@
                                     @endif
                                 </div>
                             </div>
-<<<<<<< HEAD
                             <div class="row mb-0 google-login">
                                 <div class="col-md-8 offset-md-4">
-                                    <a href="" class="btn btn-google btn-user">
+                                    <a href="{{ route('google.login') }}" class="btn btn-google btn-user">
                                         <i class="fa fa-google fa-fw"></i> Login with Google
                                     </a>
                                 </div>
                             </div>
-=======
->>>>>>> f3b566d5a17d4207eb935f9d64edb27a7aae0c09
                         </form>
                     </div>
                 </div>

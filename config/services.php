@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Third Party Services
@@ -30,5 +29,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-
+    'google' => [
+        'client_id' =>
+            '68180290033-hukjb9590m9srh9oioe2eg59hum1k656.apps.googleusercontent.com',
+        'client_secret' => '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',
+        'redirect' => 'http://localhost:8000/google/callback/',
+    ],
 ];
