@@ -620,7 +620,11 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+<<<<<<< HEAD
 .login-area , .register-area ,.resetpass-area, .verify {
+=======
+.login-area , .register-area ,.resetpass-area , .verify{
+>>>>>>> f3b566d5a17d4207eb935f9d64edb27a7aae0c09
     background-color: #15151d;
     padding-top: 190px; 
     padding-bottom: 50px;
@@ -656,6 +660,7 @@
 .logout-drop .dropdown-menu a{
     color:#64647e !important;
 }
+<<<<<<< HEAD
 .login-area .remember{
     padding-bottom: 10px !important;
 }
@@ -674,3 +679,5 @@
 .btn-login:hover , .btn-google:hover, .btn-register:hover{
     background-color: #6462c9 !important;
 }
+=======
+>>>>>>> f3b566d5a17d4207eb935f9d64edb27a7aae0c09

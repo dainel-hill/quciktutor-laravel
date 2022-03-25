@@ -273,6 +273,10 @@
                 $(".dropdown").css("display", "none");
                 $(".white-img").css("display", "block");
                 $(".special-img").css("display", "none")
+<<<<<<< HEAD
+=======
+                $(".logout-drop").css("display", "block")
+>>>>>>> f3b566d5a17d4207eb935f9d64edb27a7aae0c09
             }
         }
         function sideNav(){
