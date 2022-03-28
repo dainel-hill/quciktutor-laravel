@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="header row no-gutters">
+        <div class="header row no-gutters">
             
             <div class="header-img col-lg-6 col-md-6" style="background-image: url(assets/image/68f6498c0df2149a13134006a3c918be.png);">
                 <div class="header-img-inner justify-content-center">
